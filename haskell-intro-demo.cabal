@@ -3,7 +3,7 @@ name:               haskell-intro-demo
 version:            0.1.0.0
 
 -- A short (one-line) description of the package.
--- synopsis:
+synopsis: An introductory demo for using Haskell.
 
 -- A longer description of the package.
 -- description:
@@ -17,7 +17,11 @@ maintainer:         aleksi.lukkarinen@gmail.com
 -- A copyright notice.
 -- copyright:
 -- category:
-extra-source-files: CHANGELOG.md
+
+extra-source-files:
+    .gitignore,
+    README.md,
+    CHANGELOG.md
 
 executable haskell-intro-demo
     main-is:          Main.hs
@@ -27,6 +31,8 @@ executable haskell-intro-demo
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.14.3.0
+    build-depends:
+        base ^>=4.14.3.0,
+        haskell-say ^>=1.0.0.0
     hs-source-dirs:   app
     default-language: Haskell2010
